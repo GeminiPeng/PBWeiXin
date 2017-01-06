@@ -12,9 +12,12 @@
 		B4DE22571E1F9FBF000AE85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DE22551E1F9FBF000AE85C /* Main.storyboard */; };
 		B4DE22591E1F9FBF000AE85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DE22581E1F9FBF000AE85C /* Assets.xcassets */; };
 		B4DE225C1E1F9FBF000AE85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DE225A1E1F9FBF000AE85C /* LaunchScreen.storyboard */; };
+		BE147656056095ED1C1F2D24 /* Pods_PBWeiXin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD07F22A59495CB1C561EC3 /* Pods_PBWeiXin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68FC3F6931F2403D80687CE7 /* Pods-PBWeiXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBWeiXin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PBWeiXin/Pods-PBWeiXin.debug.xcconfig"; sourceTree = "<group>"; };
+		6967C59EA1564D6A92925001 /* Pods-PBWeiXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PBWeiXin.release.xcconfig"; path = "Pods/Target Support Files/Pods-PBWeiXin/Pods-PBWeiXin.release.xcconfig"; sourceTree = "<group>"; };
 		B4DE224E1E1F9FBF000AE85C /* PBWeiXin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBWeiXin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DE22511E1F9FBF000AE85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DE22531E1F9FBF000AE85C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B4DE22581E1F9FBF000AE85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4DE225B1E1F9FBF000AE85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4DE225D1E1F9FBF000AE85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD07F22A59495CB1C561EC3 /* Pods_PBWeiXin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PBWeiXin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE147656056095ED1C1F2D24 /* Pods_PBWeiXin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388F561F5E34292108910A13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68FC3F6931F2403D80687CE7 /* Pods-PBWeiXin.debug.xcconfig */,
+				6967C59EA1564D6A92925001 /* Pods-PBWeiXin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		439C196B4A6E96A2563DA4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD07F22A59495CB1C561EC3 /* Pods_PBWeiXin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B4DE22451E1F9FBF000AE85C = {
 			isa = PBXGroup;
 			children = (
 				B4DE22501E1F9FBF000AE85C /* PBWeiXin */,
 				B4DE224F1E1F9FBF000AE85C /* Products */,
+				388F561F5E34292108910A13 /* Pods */,
+				439C196B4A6E96A2563DA4BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4DE22601E1F9FBF000AE85C /* Build configuration list for PBXNativeTarget "PBWeiXin" */;
 			buildPhases = (
+				A1D18E2AB67F9E3FDE84A8CD /* [CP] Check Pods Manifest.lock */,
 				B4DE224A1E1F9FBF000AE85C /* Sources */,
 				B4DE224B1E1F9FBF000AE85C /* Frameworks */,
 				B4DE224C1E1F9FBF000AE85C /* Resources */,
+				6315C11D7C7066399F7CC99F /* [CP] Embed Pods Frameworks */,
+				DF61BD9AE21BE4B95727501A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6315C11D7C7066399F7CC99F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBWeiXin/Pods-PBWeiXin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D18E2AB67F9E3FDE84A8CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF61BD9AE21BE4B95727501A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PBWeiXin/Pods-PBWeiXin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4DE224A1E1F9FBF000AE85C /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		B4DE22611E1F9FBF000AE85C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FC3F6931F2403D80687CE7 /* Pods-PBWeiXin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PBWeiXin/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		B4DE22621E1F9FBF000AE85C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6967C59EA1564D6A92925001 /* Pods-PBWeiXin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PBWeiXin/Info.plist;
