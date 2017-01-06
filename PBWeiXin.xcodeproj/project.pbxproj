@@ -78,6 +78,8 @@
 		B4DE22501E1F9FBF000AE85C /* PBWeiXin */ = {
 			isa = PBXGroup;
 			children = (
+				B4DE22631E1FA32D000AE85C /* FriendList */,
+				B4DE22641E1FA32D000AE85C /* MessageList */,
 				B4DE22511E1F9FBF000AE85C /* AppDelegate.swift */,
 				B4DE22531E1F9FBF000AE85C /* ViewController.swift */,
 				B4DE22551E1F9FBF000AE85C /* Main.storyboard */,
@@ -86,6 +88,84 @@
 				B4DE225D1E1F9FBF000AE85C /* Info.plist */,
 			);
 			path = PBWeiXin;
+			sourceTree = "<group>";
+		};
+		B4DE22631E1FA32D000AE85C /* FriendList */ = {
+			isa = PBXGroup;
+			children = (
+				B4DE22691E1FA36F000AE85C /* Model */,
+				B4DE226A1E1FA36F000AE85C /* VC */,
+				B4DE226B1E1FA36F000AE85C /* View */,
+				B4DE226C1E1FA36F000AE85C /* VM */,
+			);
+			path = FriendList;
+			sourceTree = "<group>";
+		};
+		B4DE22641E1FA32D000AE85C /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				B4DE22651E1FA32D000AE85C /* Model */,
+				B4DE22661E1FA32D000AE85C /* VC */,
+				B4DE22671E1FA32D000AE85C /* View */,
+				B4DE22681E1FA32D000AE85C /* VM */,
+			);
+			path = MessageList;
+			sourceTree = "<group>";
+		};
+		B4DE22651E1FA32D000AE85C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4DE22661E1FA32D000AE85C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4DE22671E1FA32D000AE85C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4DE22681E1FA32D000AE85C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		B4DE22691E1FA36F000AE85C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4DE226A1E1FA36F000AE85C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B4DE226B1E1FA36F000AE85C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4DE226C1E1FA36F000AE85C /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +454,7 @@
 				B4DE22621E1F9FBF000AE85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
